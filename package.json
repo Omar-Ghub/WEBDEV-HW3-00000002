@@ -1,12 +1,16 @@
+
 {
   "name": "proj3",
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "homepage": "https://omar-ghub.github.io/WEBDEV-HW3-00000002/",
   "scripts": {
     "build": "rsbuild build",
     "dev": "rsbuild dev --open",
-    "preview": "rsbuild preview"
+    "preview": "rsbuild preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "react": "^19.2.0",
@@ -14,6 +18,7 @@
   },
   "devDependencies": {
     "@rsbuild/core": "^1.6.0",
-    "@rsbuild/plugin-react": "^1.4.1"
+    "@rsbuild/plugin-react": "^1.4.1",
+    "gh-pages": "^6.3.0"
   }
 }
